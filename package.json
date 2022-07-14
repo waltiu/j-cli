@@ -1,14 +1,19 @@
 {
   "name": "j-mycli",
   "version": "0.0.2",
-  "description": "",
+  "description": "create app and utils",
   "main": "index.js",
   "bin": {
     "j-mycli": "index.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/waltiu/j-mycli.git"
+  },
   "scripts": {
     "start": "node index.js"
   },
+
   "author": "",
   "license": "ISC",
   "devDependencies": {
