@@ -1,4 +1,3 @@
-#!/usr/bin/env node     //npm link 根目录运行关联本地项目
 const { Command } = require("commander");
 const { echoCliName, FUNCTION_LIST } = require("./constant");
 const packageJson = require("../package.json");

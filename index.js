@@ -1,5 +1,5 @@
-#!/usr/bin/env node     //npm link 根目录运行关联本地项目
-
+#!/usr/bin/env node    
+//npm link 根目录运行关联本地项目
 
 // node版本需大于14
 const currentNodeVersion = process.versions.node;
