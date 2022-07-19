@@ -1,6 +1,6 @@
 {
   "name": "j-mycli",
-  "version": "0.0.51",
+  "version": "0.0.52",
   "description": "create app and utils",
   "main": "index.js",
   "bin": {
