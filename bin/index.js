@@ -1,11 +1,11 @@
 const { Command } = require("commander");
-const { echoCliName, FUNCTION_LIST } = require("./constant");
+const { echoCliName, FUNCTION_LIST } = require("../lib/constant");
 const packageJson = require("../package.json");
 const inquirer = require("inquirer");
-const { ACTION_CREATE_APP } = require("./createApp/constant");
-const { ACTION_UTILS } = require("./utils/constant");
-const createApp =require("./createApp")
-const utils =require('./utils')
+const { ACTION_CREATE_APP } = require("../lib/createApp/constant");
+const { ACTION_UTILS } = require("../lib/utils/constant");
+const createApp =require("../lib/createApp")
+const utils =require('../lib/utils')
 
 
 const init = () => {

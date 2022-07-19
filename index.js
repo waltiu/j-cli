@@ -17,5 +17,5 @@ if (major < 14) {
   process.exit(1);
 }
 
-const init=require('./src')
+const init=require('./bin')
 init()
