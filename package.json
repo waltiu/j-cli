@@ -1,17 +1,17 @@
 {
   "name": "j-mycli",
-  "version": "0.0.5",
+  "version": "0.0.51",
   "description": "create app and utils",
   "main": "index.js",
   "bin": {
-    "j-mycli": "bin/index.js"
+    "j-mycli": "./bin/index.js"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/waltiu/j-mycli.git"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "node ./bin/index.js"
   },
   "author": "",
   "license": "ISC",
@@ -25,6 +25,6 @@
     "shelljs": "^0.8.5"
   },
   "dependencies": {
-    "j-mycli": "^0.0.4"
+    "j-mycli": "^0.0.51"
   }
 }

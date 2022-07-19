@@ -1,25 +1,21 @@
-const { Command } = require("commander");
-const { echoCliName, FUNCTION_LIST } = require("../lib/constant");
-const packageJson = require("../package.json");
-const inquirer = require("inquirer");
-const { ACTION_CREATE_APP } = require("../lib/createApp/constant");
-const { ACTION_UTILS } = require("../lib/utils/constant");
-const createApp =require("../lib/createApp")
-const utils =require('../lib/utils')
+#!/usr/bin/env node    
+//npm link 根目录运行关联本地项目
 
+// node版本需大于14
+const currentNodeVersion = process.versions.node;
+const semver = currentNodeVersion.split('.');
+const major = semver[0];
 
-const init = () => {
-  echoCliName();
-  const program = new Command();
-      program.version(packageJson.version);
+if (major < 14) {
+  console.error(
+    'You are running Node ' +
+      currentNodeVersion +
+      '.\n' +
+      'Create React App requires Node 14 or higher. \n' +
+      'Please update your version of Node.'
+  );
+  process.exit(1);
+}
 
-  inquirer.prompt(FUNCTION_LIST).then((res) => {
-    if (res.startkit === ACTION_CREATE_APP) {
-      createApp(res.name,res.template)
-    } else if (res.startkit === ACTION_UTILS) {
-      utils[res.util]()
-    }
-  });
-};
-
-module.exports = init;
+const init=require('../lib')
+init()

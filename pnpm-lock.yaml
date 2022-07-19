@@ -6,12 +6,12 @@ specifiers:
   download-git-repo: ^3.0.2
   figlet: ^1.5.2
   inquirer: ^8.1.2
-  j-mycli: ^0.0.4
+  j-mycli: ^0.0.51
   ora: ^5.4.1
   shelljs: ^0.8.5
 
 dependencies:
-  j-mycli: 0.0.4
+  j-mycli: 0.0.51
 
 devDependencies:
   chalk: 4.1.2
@@ -635,8 +635,8 @@ packages:
       is-object: 1.0.2
     dev: true
 
-  /j-mycli/0.0.4:
-    resolution: {integrity: sha512-uO47+ecYnyGyAhj7WYOdDGTI7GdEAJFN7srdrYi0bU3P8N1la4pzYh2p9axrDJqyYkZXZKKYaNrgYrREBCuRMg==}
+  /j-mycli/0.0.51:
+    resolution: {integrity: sha512-bbfdT8Hbl3ROl7qoCEGsSq15RTEtZrntakXOQPBHSxphWtl7uv9Z0Ua9+xmH3TjPoVvutZkHE/jJZlMG8LhIjA==}
     hasBin: true
     dev: false
 
